@@ -22,9 +22,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [NSThread sleepForTimeInterval:3.0]
-    
-    ;
+    //让启动页停留2.0秒
+    [NSThread sleepForTimeInterval:2.0];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     tabBarController = [[ViewController alloc] init];
     [self.window setRootViewController:tabBarController];
